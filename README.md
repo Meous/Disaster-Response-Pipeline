@@ -39,4 +39,8 @@ This project uses Python 3.7.2 and the following libraries:
 - sqlalchemy
 - dash
 
+## Reference
+
+https://github.com/Blostrupsen/disaster_response_pipelines
+
 
