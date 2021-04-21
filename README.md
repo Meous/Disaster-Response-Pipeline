@@ -17,6 +17,22 @@ This is one of the Data Scientist Nanodegree projects from Udacity and the objec
 
 3. Go to http://0.0.0.0:3001/
 
+### Files
+
+Notebook files
+1. ETL Pipeline Preparation.ipynb
+2. ML Pipeline Preparation.ipynb
+App
+3. run.py
+
+Data
+4. DisasterResponse.db
+5. disaster_categories.csv
+6. disaster_messages.csv
+
+Models
+7. process_data.py
+8. train_classifier.py
 
 ## Project Components
 There are three components needed to be completed for this project.
