@@ -7,7 +7,7 @@ from nltk.tokenize import word_tokenize
 
 from flask import Flask
 from flask import render_template, request, jsonify
-from plotly.graph_objs import Bar
+from plotly.graph_objs import Bar, Line 
 from sklearn.externals import joblib
 from sqlalchemy import create_engine
 
@@ -27,7 +27,7 @@ def tokenize(text):
 
 # load data
 engine = create_engine('sqlite:///../data/DisasterResponse.db')
-df = pd.read_sql('ETL_data', engine)
+df = pd.read_sql('disaster_response', engine)
 
 # load model
 model = joblib.load("../models/classifier.pkl")
