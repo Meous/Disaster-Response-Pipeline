@@ -68,7 +68,7 @@ def index():
     
     # extract data needed for visuals
     # TODO: Below is an example - modify to extract data for your own visuals
-    genre_counts = df.groupby('genre').count()['original']
+    medical_products = df.groupby('genre').count()['medical_products']
     genre_names = list(genre_counts.index)
     
     # create visuals
@@ -78,14 +78,14 @@ def index():
             'data': [
                 line(
                     x=genre_names,
-                    y=genre_counts
+                    y=medical_products
                 )
             ],
 
             'layout': {
-                'title': 'Count of Genres Messages',
+                'title': 'Distribution of Medical Products',
                 'yaxis': {
-                    'title': "Count of Messages"
+                    'title': "Medical Products"
                 },
                 'xaxis': {
                     'title': "Genre"
